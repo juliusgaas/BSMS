@@ -16,7 +16,7 @@ $qry = $conn->query("SELECT * FROM `transaction_list` where transaction_id = '{$
 <div class="container-fluid">
     <div id="outprint_receipt">
         <div class="text-center fw-bold lh-1">
-            <span>Bakery Shop Management System</span><br>
+            <span> Shop Management System</span><br>
             <small>Receipt</small>
         </div>
         <div class="fs-6 fs-light d-flex w-100 mb-1">

@@ -13,7 +13,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN | Bakery Shop Management System</title>
+    <title>LOGIN | Shop Management System</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/popper.min.js"></script>
@@ -24,7 +24,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
             height:100%;
         }
         body{
-            background-image:url('./images/wallpaper.jfif') !important;
+            background-image:url('./images/bg.jpg') !important;
             background-size:cover;
             background-repeat:no-repeat;
             background-position:center center;
@@ -43,7 +43,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 <body class="">
    <div class="h-100 d-flex jsutify-content-center align-items-center">
        <div class='w-100'>
-        <h1 class="py-5 text-center text-light px-4" id="sys_title">Bakery Shop Management System</h1>
+        <h1 class="py-5 text-center text-light px-4" id="sys_title"> Shop Management System</h1>
         <div class="card my-3 col-md-4 offset-md-4">
             <div class="card-body">
                 <form action="" id="login-form">

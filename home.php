@@ -1,7 +1,7 @@
 <div class="content py-3">
     <div class="card rounded-0 shadow">
         <div class="card-body">
-            <h3>Welcome to Bakery Shop Management System</h3>
+            <h3>Welcome to Shop Management System</h3>
             <hr>
             <div class="col-12">
                 <div class="row gx-3 row-cols-4">
