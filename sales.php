@@ -65,7 +65,7 @@
                                         $sql = "SELECT p.*,c.name as cname FROM `product_list` p inner join `category_list` c on p.category_id = c.category_id where p.status = 1 and p.delete_flag = 0 order by p.`name` asc";
                                         $qry = $conn->query($sql);
                                         while($row = $qry->fetch_assoc()):
-                                            $stock_in = $conn->query("SELECT sum(quantity) as `total` FROM `stock_list` where unix_timestamp(`expiry_date`) >= unix_timestamp(CURRENT_TIMESTAMP) and product_id = '{$row['product_id']}' ")->fetch_assoc()['total'];
+                                            $stock_in = $conn->query("SELECT sum(quantity) as `total` FROM `stock_list` where  product_id = '{$row['product_id']}' ")->fetch_assoc()['total'];
                                             $stock_out = $conn->query("SELECT sum(quantity) as `total` FROM `transaction_items` where product_id = '{$row['product_id']}' ")->fetch_assoc()['total'];
                                             $stock_in = $stock_in > 0 ? $stock_in : 0;
                                             $stock_out = $stock_out > 0 ? $stock_out : 0;

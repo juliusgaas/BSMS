@@ -2,7 +2,10 @@
 <div class="card rounded-0 shadow">
     <div class="card-header d-flex justify-content-between">
         <h3 class="card-title">Product List</h3>
+        
         <div class="card-tools align-middle">
+            <a href="./export_product.php" target="_blank" class="btn btn-primary btn-sm py-1 rounded-0" id="export_csv">Export CSV</a>
+            <button class="btn btn-primary btn-sm py-1 rounded-0" type="button" id="import_csv">Import CSV</button>
             <button class="btn btn-dark btn-sm py-1 rounded-0" type="button" id="create_new">Add New</button>
         </div>
     </div>
@@ -78,6 +81,9 @@
 </div>
 <script>
     $(function(){
+        $('#import_csv').click(function(){
+            uni_modal('Import Product',"import_product.php")
+        })
         $('#create_new').click(function(){
             uni_modal('Add New Product',"manage_product.php",'mid-large')
         })

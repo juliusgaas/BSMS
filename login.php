@@ -43,27 +43,30 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 <body class="">
    <div class="h-100 d-flex jsutify-content-center align-items-center">
        <div class='w-100'>
-        <h1 class="py-5 text-center text-light px-4" id="sys_title"> Shop Management System</h1>
-        <div class="card my-3 col-md-4 offset-md-4">
-            <div class="card-body">
-                <form action="" id="login-form">
-                    <center><small>Please enter your credentials.</small></center>
-                    <div class="form-group">
-                        <label for="username" class="control-label">Username</label>
-                        <input type="text" id="username" autofocus name="username" class="form-control form-control-sm rounded-0" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password" class="control-label">Password</label>
-                        <input type="password" id="password" name="password" class="form-control form-control-sm rounded-0" required>
-                    </div>
-                    <div class="form-group d-flex w-100 justify-content-end">
-                        <button class="btn btn-sm btn-primary rounded-0 my-1">Login</button>
-                    </div>
-                </form>
+            <h1 class="py-5 text-center text-light px-4" id="sys_title"> Shop Management System</h1>
+            <div class="card my-3 col-md-4 offset-md-4">
+                <div class="card-body">
+                    <form action="" id="login-form">
+                        <center><small>Please enter your credentials.</small></center>
+                        <div class="form-group">
+                            <label for="username" class="control-label">Username</label>
+                            <input type="text" id="username" autofocus name="username" class="form-control form-control-sm rounded-0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="control-label">Password</label>
+                            <input type="password" id="password" name="password" class="form-control form-control-sm rounded-0" required>
+                        </div>
+                        <div class="form-group d-flex w-100 justify-content-end">
+                            <button class="btn btn-sm btn-primary rounded-0 my-1">Login</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
+            test
        </div>
+        
    </div>
+    
 </body>
 <script>
     $(function(){

@@ -3,6 +3,7 @@
     <div class="card-header d-flex justify-content-between">
         <h3 class="card-title">Stock List</h3>
         <div class="card-tools align-middle">
+            <button class="btn btn-dark btn-sm py-1 rounded-0" type="button" id="import_stock">Import CSV</button>
             <button class="btn btn-dark btn-sm py-1 rounded-0" type="button" id="create_new">Add New</button>
         </div>
     </div>
@@ -64,6 +65,9 @@
     $(function(){
         $('#create_new').click(function(){
             uni_modal('Add New Stock',"manage_stock.php")
+        })
+         $('#import_stock').click(function(){
+            uni_modal('Import CSV',"upload_stock.php")
         })
         $('.edit_data').click(function(){
             uni_modal('Edit Stock Details',"manage_stock.php?id="+$(this).attr('data-id'))

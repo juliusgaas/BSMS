@@ -34,8 +34,12 @@ $qry = $conn->query("SELECT * FROM `product_list` where product_id = '{$_GET['id
                         <input type="text" name="name"  id="name" required class="form-control form-control-sm rounded-0" value="<?php echo isset($name) ? $name : '' ?>">
                     </div>
                     <div class="form-group">
-                        <label for="price" class="control-label">Price</label>
+                        <label for="price" class="control-label">Retail Price</label>
                         <input type="number" step="any" name="price"  id="price" required class="form-control form-control-sm rounded-0 text-end" value="<?php echo isset($price) ? $price : '' ?>">
+                    </div>
+                     <div class="form-group">
+                        <label for="price" class="control-label">Original Price</label>
+                        <input type="number" step="any" name="original_price"  id="original_price" required class="form-control form-control-sm rounded-0 text-end" value="<?php echo isset($original_price) ? $original_price : '' ?>">
                     </div>
                     <div class="form-group">
                         <label for="alert_restock" class="control-label">QTY Alert for Restock</label>

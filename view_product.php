@@ -16,7 +16,7 @@ $qry = $conn->query("SELECT p.*,c.name as cname FROM `product_list` p inner join
     <div class="col-12">
         <div class="w-100 mb-1">
             <div class="fs-6"><b>Product Code:</b></div>
-            <div class="fs-5 ps-4"><?php echo isset($name) ? $name : '' ?></div>
+            <div class="fs-5 ps-4"><?php echo isset($product_code) ? $product_code : '' ?></div>
         </div>
         <div class="w-100 mb-1">
             <div class="fs-6"><b>Category:</b></div>
@@ -33,6 +33,10 @@ $qry = $conn->query("SELECT p.*,c.name as cname FROM `product_list` p inner join
         <div class="w-100 mb-1">
             <div class="fs-6"><b>Price:</b></div>
             <div class="fs-5 ps-4"><?php echo isset($price) ? number_format($price,2) : '' ?></div>
+        </div>
+        <div class="w-100 mb-1">
+            <div class="fs-6"><b>Original Price:</b></div>
+            <div class="fs-5 ps-4"><?php echo isset($price) ? number_format($original_price,2) : '' ?></div>
         </div>
         <div class="w-100 mb-1">
             <div class="fs-6"><b>Status:</b></div>

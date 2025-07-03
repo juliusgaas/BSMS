@@ -36,7 +36,7 @@ $qry = $conn->query("SELECT * FROM `stock_list` where stock_id = '{$_GET['id']}'
                     </div>
                     <div class="form-group">
                         <label for="expiry_date" class="control-label">Expiry Date</label>
-                        <input type="date" name="expiry_date"  id="expiry_date" required class="form-control form-control-sm rounded-0" value="<?php echo isset($expiry_date) ? date("Y-m-d", strtotime($expiry_date)) : '' ?>">
+                        <input type="date" name="expiry_date"  id="expiry_date" required class="form-control form-control-sm rounded-0" value="<?php echo isset($expiry_date) ? date("Y-m-d", strtotime($expiry_date)) : date("Y-m-d") ?>">
                     </div>
                 </div>
             </div>
